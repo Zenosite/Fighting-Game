@@ -217,6 +217,7 @@ class Sprite {
             this.isAttacking=false
         }, 100)
     }
+    
 }
 //------------------------------------------------------------------------------------------------------------------------------------------------------------
 
@@ -507,7 +508,7 @@ function animate(){
         winner(player, enemy, timerId)
         setTimeout(() =>{
             game_status = "Done"
-        }, 1000)
+        }, 100)
     }
 }
 
@@ -692,11 +693,6 @@ function StartGame(){
     document.querySelector('#Start').style.display = 'none'
     document.querySelector('#displaytext').style.display = 'none'
 
-    //Reset Game Status && Timer
-    timer=60
-    Timer_status = "Play"
-    game_status = "Playing"
-
     // Reset Enemy Health & Position
     enemy.health=100
     enemy.position.x=974
@@ -716,6 +712,11 @@ function StartGame(){
     player.check_jump=false
     player.check=-1
     document.querySelector('#playerHealth').style.width = player.health + '%'
+
+    //Reset Game Status && Timer
+    timer=60
+    Timer_status = "Play"
+    game_status = "Playing"
 
     decreasetimer()
     animate()

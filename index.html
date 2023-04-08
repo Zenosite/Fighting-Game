@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fighting Game With Platforms</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<style>
+    *{
+        box-sizing: border-box;
+        font-family: 'Press Start 2P', cursive;
+    }
+</style>
+
+<body>
+
+    <div class="Header">
+        <h1>Fighting Game</h1>
+        <h4>By: Melvin</h4>
+    </div>
+
+    <div class="Nav">
+        <button onclick="DisplayGame()" id="botton" style="padding-right: 20px;"><h3 id="btn">Home</h3></button>
+        <h3 style="padding-right: 20px;"><a id=btn href="https://github.com/Zenosite" style="text-decoration: none;">GitHub</a></h3>
+        <button onclick="HideGame()" id="botton"><h3 id="btn">How To Play</h3></button>
+    </div>
+
+    <div id="Game" style="position:relative; display:inline-block; left: 50%; top: 50%; transform: translate(-50%, 15%);">
+        <div style="position: absolute; display:flex; width:100%; align-items:center; padding: 20px;">
+            <!-- Player health -->
+            <div style="position: relative; height:30px; width:100%; display:flex; justify-content: flex-end;">
+                <div style="background-color: #f43f5e; height: 30px; width:100%;border: 3px solid white" ></div>
+                <div id="playerHealth" style="position: absolute; background:#a855f7; top:0; right:0; bottom:0; width:100%;
+                border-left: 3px solid white;
+                border-top: 3px solid white;
+                border-bottom: 3px solid white;
+                transition: 1s;"></div>
+            </div>
+
+            <!-- Timer -->
+            <div id="timer" style="background-color: #1e3a8a; height:50px; width:100px; flex-shrink:0; display:flex; align-items:center; justify-content:center; color:  #fef08a; border: 3px solid white">
+                
+            </div>
+
+            <!-- Enemy health  -->
+            <div style="position: relative; height:30px; width:100%;">
+                <div style="background-color: #f43f5e; height: 30px; border: 3px solid white" ></div>
+                <div id="enemyHealth" style="position: absolute; background:#a855f7; top:0; left:0; right:0; bottom:0; 
+                border-right: 3px solid white;
+                border-top: 3px solid white;
+                border-bottom: 3px solid white;
+                transition: 1s;"></div>
+            </div>
+        </div>
+        <div id="displaytext" style="position: absolute; color:rgb(255, 255, 255); display:none; align-items:center; justify-content:center; top:0; left:0; right:0; bottom:0;">Tie</div>
+        <div onclick="StartGame()" id="Start" style="position: absolute; color:rgb(255, 255, 255); display:flex; align-items:center; justify-content:center; top: 150px; left:400px; right:400px; bottom:350px;">Start</div>
+        <canvas></canvas>
+    </div> 
+
+    <div>
+        <img style="display:none;" id="Howtoplay" src="./img/How_To_Play.png" alt="">
+    </div>
+
+    <script src = "index.js"></script>
+</body>
+</html>

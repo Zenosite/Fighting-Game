@@ -1,0 +1,80 @@
+body{
+    margin: 0;
+    background-image: url("./img/Background.gif");
+    background-color: #dbd2a9;
+    background-size: cover;
+}
+
+.Header{   
+    text-align: center;
+    background-color: blueviolet;
+    border-bottom: 3px solid rgb(200, 36, 233);
+    padding: 10px;
+    margin: 0px;
+}
+
+.Nav{
+    padding-left: 20px;
+    display: flex;
+    padding-right: 20px;
+    background-color: #8b5cf6;
+    border-bottom: 3px solid #c4b5fd;
+}
+
+#botton{
+    padding: 0px;
+    border: none;
+    margin: 0px;
+    background-color: #8b5cf6;
+}
+
+#btn {
+    -webkit-border-radius: 12;
+    -moz-border-radius: 12;
+    border-radius: 12px;
+    color: #ffffff;
+    font-size: 20px;
+    background: #f27b93;
+    padding: 10px 20px 10px 20px;
+    text-decoration: none;
+    margin: 0px;
+}
+
+#btn:hover {
+    background: #eb7bd1;
+    text-decoration: none;
+}
+
+#Howtoplay{
+    width: 1024px;
+    position:relative; 
+    left: 50%; 
+    top: 50%; 
+    transform: translate(-50%, 15%);
+}
+
+#Start {
+    background: #00fc26;
+    background-image: -webkit-linear-gradient(top, #00fc26, #1cb314);
+    background-image: -moz-linear-gradient(top, #00fc26, #1cb314);
+    background-image: -ms-linear-gradient(top, #00fc26, #1cb314);
+    background-image: -o-linear-gradient(top, #00fc26, #1cb314);
+    background-image: linear-gradient(to bottom, #00fc26, #1cb314);
+    -webkit-border-radius: 20;
+    -moz-border-radius: 20;
+    border-radius: 20px;
+    color: #ffffff;
+    font-size: 40px;
+    padding: 10px 20px 10px 20px;
+    text-decoration: none;
+  }
+  
+  #Start:hover {
+    background: #6ee694;
+    background-image: -webkit-linear-gradient(top, #6ee694, #88eb97);
+    background-image: -moz-linear-gradient(top, #6ee694, #88eb97);
+    background-image: -ms-linear-gradient(top, #6ee694, #88eb97);
+    background-image: -o-linear-gradient(top, #6ee694, #88eb97);
+    background-image: linear-gradient(to bottom, #6ee694, #88eb97);
+    text-decoration: none;
+  }

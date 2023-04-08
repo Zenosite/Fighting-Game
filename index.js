@@ -320,7 +320,7 @@ animate()
 setTimeout(() =>{
     Timer_status = "Pause"
     game_status = "Done"
-}, 10)
+}, 50)
 function animate(){
     if(timer!=0 && game_status != "Done" && Timer_status != "Pause"){
         window.requestAnimationFrame(animate)
